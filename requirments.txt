@@ -1,0 +1,7 @@
+pyaml==15.8.2
+PyYAML==3.11
+requests==2.10.0
+six==1.10.0
+slackclient==1.0.1
+slackweb==1.0.5
+websocket-client==0.37.0

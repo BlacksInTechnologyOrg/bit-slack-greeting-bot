@@ -8,6 +8,7 @@ to help promote opensource and BIT code collaboration.
 
 """
 import time
+import sys
 from slackclient import SlackClient
 from helpers import load_config
 
@@ -26,7 +27,7 @@ if slack_config:
     bot_user = slack_config['bot_user']
     greeting_message = slack_config['greeting_message']
 else:
-    exit()
+    sys.exit("Couldn't set variables")
 
 
 def slack_client_connect():
@@ -71,8 +72,9 @@ if __name__ == "__main__":
         print("BITBOT is connected to Slack")
         while True:
             output = slack_event_parser(slack_client.rtm_read())
-            if output['type'] == 'team_join':
-                slack_post_message(message=greeting_message)
+            if output:
+                if output['type'] == 'team_join':
+                    slack_post_message(message=greeting_message)
             time.sleep(socket_delay)
     else:
         print("Could not connect to slack. Check your token or network connection.")

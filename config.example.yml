@@ -3,9 +3,14 @@
 slack:
   token: <token>
   bot_user: <bot user>
-  introduction_channel_id: <channel id>
-  greeting_message: |
-                    Hi, I'm bitbot :bitlogo: . This is our first community coding project!
-                    Join in on the fun!
-                    Hack all the things :neckbeard:!
-                    Drink all the :beer:!
+  channels:
+    chanel1: <chanel1 id>
+    channe2: <channel2 id>
+  messages:
+    greeting_message: |
+                      Hi, I'm bitbot :bitlogo: . This is our first community coding project!
+                      Join in on the fun!
+                      Hack all the things :neckbeard:!
+                      Drink all the :beer:!
+    another_message: |
+                     A differnt message to post.

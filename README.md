@@ -11,6 +11,42 @@ requirements are beign hammered out. We've discussed using [Given-When-Then](htt
 
 ## Installation
 
+1. clone repo
+```
+ git clone git@github.com:BlacksInTechnologyOrg/bit-slack-greeting-bot.git
+```
+
+2. install python requirments
+```
+  cd bit-slack-greeting-bot
+  pip install -r requirments.txt
+```
+
+3. Create config.yml
+
+```
+ cp config.example.yml config.yml
+
+```
+
+4. Update config settings
+
+````yaml
+sslack:
+  token: <token>
+  bot_user: <bot user>
+  channels:
+    chanel1: <chanel1 id>
+    channe2: <channel2 id>
+  messages:
+    greeting_message: |
+                      Hi, I'm bitbot :bitlogo: . This is our first community coding project!
+                      Join in on the fun!
+                      Hack all the things :neckbeard:!
+                      Drink all the :beer:!
+    another_message: |
+                     A differnt message to post.`
+````
 TODO: Add documentation
 
 ## Usage

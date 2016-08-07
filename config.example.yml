@@ -1,0 +1,11 @@
+---
+
+slack:
+  token: <token>
+  bot_user: <bot user>
+  introduction_channel_id: <channel id>
+  greeting_message: |
+                    Hi, I'm bitbot :bitlogo: . This is our first community coding project!
+                    Join in on the fun!
+                    Hack all the things :neckbeard:!
+                    Drink all the :beer:!

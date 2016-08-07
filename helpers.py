@@ -10,8 +10,8 @@ def load_config(get_settings=None):
     """
     Description:
     loads config.yml
-    settings should be passed in as a dictionary
-    get_settings = { 'settings for': [ 'setting1', 'setting2', 'setting3' ] }
+    settings should be passed in as a dictionary.
+    get_settings = { 'settings for': [ 'setting1', 'setting2', 'setting3', {'setting_key': 'setting_value'} ] }
     """
     config = dict()
 
@@ -27,7 +27,12 @@ def load_config(get_settings=None):
         settings_list = [x for x in get_settings[settings]]
         for setting in settings_list:
             try:
-                config[setting] =  open_config[settings][setting]
+                if isinstance(setting, dict):
+                    key = (', '.join(setting.keys()))
+                    value = (', '.join(setting.values()))
+                    config[value] = open_config[settings][key][value]
+                else:
+                    config[setting] = open_config[settings][setting]
             except:
-                return "Issue loading {0} in config.yml".format(setting)
+                print "Issue loading {0} in config.yml".format(setting)
     return config

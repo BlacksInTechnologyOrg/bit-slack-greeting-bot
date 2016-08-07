@@ -11,25 +11,27 @@ requirements are beign hammered out. We've discussed using [Given-When-Then](htt
 
 ## Installation
 
-1. clone repo
+Clone repo
+
 ```
  git clone git@github.com:BlacksInTechnologyOrg/bit-slack-greeting-bot.git
 ```
 
-2. install python requirments
+Install python requirments
+
 ```
   cd bit-slack-greeting-bot
   pip install -r requirments.txt
 ```
 
-3. Create config.yml
+Create config.yml
 
 ```
  cp config.example.yml config.yml
 
 ```
 
-4. Update config settings
+Update config settings
 
 ````yaml
 sslack:
@@ -47,11 +49,12 @@ sslack:
     another_message: |
                      A differnt message to post.`
 ````
-TODO: Add documentation
 
 ## Usage
 
-TODO: Write usage instructions
+```
+python bitbot.py
+```
 
 ## Contributing
 

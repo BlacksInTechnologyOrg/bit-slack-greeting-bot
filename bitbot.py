@@ -10,8 +10,11 @@ to help promote opensource and BIT code collaboration.
 from slackclient import SlackClient
 from helpers import load_config
 
+slack_settings = dict()
+slack_settings['slack'] = ['slack_token', 'introduction_channel_id', 'bot_user', 'greeting_message']
+
 try:
-    slack_config = load_config(get_settings="slack")
+    slack_config = load_config(get_settings=slack_settings)
 except:
     print("Problem loading config settings")
 
@@ -20,6 +23,8 @@ if slack_config:
     introduction_channel_id = slack_config['introduction_channel_id']
     bot_user = slack_config['bot_user']
     greeting_message = slack_config['greeting_message']
+else:
+    exit()
 
 
 def slack_client_connect():
@@ -45,6 +50,6 @@ def slack_post_message(message=None):
 
 
 #slack_client_test()
-#slack_post_message(message=greeting_message)
+slack_post_message(message=greeting_message)
 
 

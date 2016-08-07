@@ -34,7 +34,7 @@ Create config.yml
 Update config settings
 
 ````yaml
-sslack:
+slack:
   token: <token>
   bot_user: <bot user>
   channels:

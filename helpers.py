@@ -1,6 +1,6 @@
 """
-Definition:
-Helper function
+Description:
+Helper functions
 """
 
 import yaml

@@ -74,4 +74,4 @@ TODO: Write credits
 
 ## License
 
-TODO: Write license
+BiT Slack Bot Project is using the [Apache 2.0 License](LICENSE.txt).

@@ -74,4 +74,4 @@ TODO: Write credits
 
 ## License
 
-BiT Slack Bot Project is using the [Apache 2.0 License](LICENSE.txt).
+BiT Slack Bot Project is using the [MIT License (MIT)](LICENSE.txt).

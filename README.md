@@ -21,7 +21,7 @@ Install python requirments
 
 ```
   cd bit-slack-greeting-bot
-  pip install -r requirments.txt
+  pip install -r requirements.txt
 ```
 
 Create config.yml

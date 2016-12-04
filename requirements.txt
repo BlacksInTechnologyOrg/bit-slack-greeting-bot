@@ -5,4 +5,3 @@ six==1.10.0
 slackclient==1.0.1
 slackweb==1.0.5
 websocket-client==0.37.0
-pytest

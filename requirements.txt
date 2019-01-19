@@ -1,5 +1,6 @@
 pyaml==15.8.2
-PyYAML==3.11
+# PyYAML==3.11
+PyYAML==4.2b1
 requests==2.10.0
 six==1.10.0
 slackclient==1.0.1
